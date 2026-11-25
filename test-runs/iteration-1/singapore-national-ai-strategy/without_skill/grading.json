@@ -1,0 +1,54 @@
+{
+  "expectations": [
+    {
+      "text": "The answer commits to a specific strategic position or niche for Singapore in AI rather than recommending competing on every layer.",
+      "passed": true,
+      "evidence": "'The core thesis: be the trusted interface, not a contender'. There are three named bets (most verifiably trusted compute jurisdiction; world's reference deployment; memory/packaging/equipment/tropical compute) and an explicit 'What Singapore explicitly won't do' list (no sovereign frontier model, no megawatt fight with Johor/Jakarta/Bangkok)."
+    },
+    {
+      "text": "The answer addresses the US–China dimension concretely (for example chip export controls, hedging, or trusted-hub positioning) and explains how Singapore navigates it.",
+      "passed": true,
+      "evidence": "'Layered alignment, not neutrality': align with US rules at the chip/compute layer, stay fully open to China at the application, commerce and talent layer. It cites the 16 Nov BIS rule, Megaspeed and the 18%-billed vs <2%-shipped Nvidia figure. A distinctive move is a symmetric anti-circumvention law ('Singapore will not be used as a conduit to get around the export laws of its major trading partners, any of them'), justified by MOFCOM Announcement No. 26. It also has explicit 'When this fails' scenarios and hedges."
+    },
+    {
+      "text": "The answer addresses Singapore's physical constraints for AI infrastructure, such as energy, land, water, or data-centre capacity, and proposes how to work within or around them.",
+      "passed": true,
+      "evidence": "It opens with '700 km² of land, and power that comes almost entirely from imported gas'. The energy section covers 95% gas, peak demand of 8.6GW rising to 9.9–13GW by 2031, slipping imports and data centres at 7% heading to 12%. Responses: allocate megawatts by value, full-cost pricing plus a 'compute dividend', a tropical-efficiency export niche, a Johor joint trusted-compute zone, and a 2029 nuclear go/no-go."
+    },
+    {
+      "text": "The answer assigns key actions to specific Singapore institutions or agencies (for example a named ministry, statutory board or fund) rather than to \"the government\" in general.",
+      "passed": true,
+      "evidence": "A borderline pass. Some key actions are tied to named bodies: 'That should be the top target for the Economic Development Board's semiconductor team' (CoWoS-class packaging); 'physical audits by IMDA and Customs' under an extended Strategic Goods (Control) Act; 'The National AI Council should cut the ten priorities... name a single accountable minister and a small delivery unit reporting directly to the Prime Minister'; 'the Monetary Authority setting the standards'. Many other actions have no owner: the Washington delegation, the Beijing channel, energy pricing (no EMA), nuclear, talent (no MOM)."
+    },
+    {
+      "text": "The answer sets measurable success indicators with a time frame.",
+      "passed": true,
+      "evidence": "The scorecard 'Target by 2029' includes measurable items: trusted-jurisdiction parity 'Achieved by end-2027'; workers using AI in core tasks 'Above 50%'; frontier-lab research staff '500+'; 'one CoWoS-class line committed'. Several rows are not measurable targets ('Measurably above trend', 'Tracked and growing'), and there are no baselines."
+    },
+    {
+      "text": "The answer discusses how the strategy could fail and what early signals would show it is failing.",
+      "passed": false,
+      "evidence": "Failure is discussed: 'When this fails. Layered alignment breaks in two scenarios' (Washington moves the goalposts; Beijing retaliates); certification 'turns into box-ticking'. But no early signals are tied to these failure modes. No leading indicators or tripwires say the strategy is going wrong; the only mechanism is a generic 'quarterly scorecard... honest enough to show red'. The second half of the expectation is not met."
+    }
+  ],
+  "summary": {"passed": 5, "failed": 1, "total": 6, "pass_rate": 0.83},
+  "execution_metrics": {"output_chars": 37444, "output_words": 4813, "total_tokens": 152367},
+  "timing": {"executor_duration_seconds": 559.9, "total_duration_seconds": 559.9},
+  "claims": [
+    {"claim": "Reports say the Megaspeed scandal has already cost Jensen Huang the Nvidia CEO job", "type": "factual", "verified": true, "evidence": "Web search returns Nvidia's SEC 8-K on a CEO transition and multiple November 2026 reports of Huang's resignation, with Colette Kress as interim CEO. The answer correctly hedges with 'reports say'."},
+    {"claim": "In Nvidia's fiscal 2025, 18% of revenue was billed to Singapore but under 2% was shipped there", "type": "factual", "verified": true, "evidence": "Consistent with Nvidia's FY2025 10-K disclosure on Singapore billing vs shipment. The with-skill run's METI parliamentary reply makes the same point ('under 1% of Nvidia's revenue')."},
+    {"claim": "Anthropic's Economic Index ranked Singapore second in the world for per-capita usage, behind Israel", "type": "factual", "verified": true, "evidence": "Consistent with the September 2025 Anthropic Economic Index report."},
+    {"claim": "Micron makes 98% of its flash memory in Singapore", "type": "factual", "verified": true, "evidence": "Consistent with Micron's long-standing public statements about its Singapore NAND operations."},
+    {"claim": "A 12.5% US tariff was imposed on a third of Singapore's exports in July 2026", "type": "factual", "verified": false, "evidence": "Cited to The Star and plausible in the post-IEEPA tariff regime, but not independently verified. The with-skill run instead refers to 'new 15% tariffs' (METI, March 2026). The two may describe different instruments."}
+  ],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {
+    "suggestions": [
+      {"assertion": "The answer assigns key actions to specific Singapore institutions or agencies (for example a named ministry, statutory board or fund) rather than to \"the government\" in general.", "reason": "This passed on four or five scattered agency mentions while most actions had no owner. Requiring an owner for each major action, or for the first-90-days list, would make it discriminating."},
+      {"assertion": "The answer sets measurable success indicators with a time frame.", "reason": "Passes despite rows like 'Tracked and growing'. Require baselines and a minimum number of quantified targets."},
+      {"reason": "This answer's best ideas (the symmetric export-control principle, SEA-LION's Qwen dependency, a tropical-efficiency niche, an AI assurance/insurance/arbitration hub, a 90-day pilot procurement cap) are not rewarded by any assertion. Consider an assertion on non-obvious, Singapore-specific levers, or a pairwise quality judgment."},
+      {"reason": "The answer appends a personal note for the user as a founder (drawn from user context). No assertion addresses whether such personalisation helps or distracts. Worth deciding whether it is wanted."}
+    ],
+    "overall": "The one failure (no early-warning signals) is real but narrow. On strategic insight this answer is at least the equal of the with-skill run, and the assertions don't measure that."
+  }
+}

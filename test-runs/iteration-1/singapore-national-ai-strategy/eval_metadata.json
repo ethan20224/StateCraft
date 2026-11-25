@@ -1,0 +1,12 @@
+{
+  "eval_name": "singapore-national-ai-strategy",
+  "prompt": "if you were running singapore, what should the national AI strategy actually be so we genuinely matter in the AI race and it's not just another government pdf? think chips, energy, talent, the us-china situation, all of it. give me the strategy and practical steps",
+  "assertions": [
+    "The answer commits to a specific strategic position or niche for Singapore in AI rather than recommending competing on every layer.",
+    "The answer addresses the US–China dimension concretely (for example chip export controls, hedging, or trusted-hub positioning) and explains how Singapore navigates it.",
+    "The answer addresses Singapore's physical constraints for AI infrastructure, such as energy, land, water, or data-centre capacity, and proposes how to work within or around them.",
+    "The answer assigns key actions to specific Singapore institutions or agencies (for example a named ministry, statutory board or fund) rather than to \"the government\" in general.",
+    "The answer sets measurable success indicators with a time frame.",
+    "The answer discusses how the strategy could fail and what early signals would show it is failing."
+  ]
+}

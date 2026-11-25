@@ -1,0 +1,52 @@
+{
+  "expectations": [
+    {
+      "text": "The answer identifies specific binding constraints on the defense industrial base (such as skilled workforce, shipyard capacity, supplier fragility, or unstable demand signals) rather than treating it mainly as a funding problem.",
+      "passed": true,
+      "evidence": "'Money is no longer the main constraint. What's missing is demand that industry believes will last, the skilled workers to build things, and a few lower-tier suppliers'. Correction one is headed 'this is no longer mainly a money problem' and uses the Mesquite 155mm plant ('zero parts that met contract specifications'). It cites ~70% of critical submarine component suppliers with no competitor, shipyards ~174,000 workers short, 50–60% first-year attrition, and shipyard pay falling from 3–4x to 1.2–1.4x comparable work."
+    },
+    {
+      "text": "The answer explains the concrete political and budget path through Congress (for example appropriations, the NDAA, multiyear procurement authority, or reconciliation) and who has to agree.",
+      "passed": true,
+      "evidence": "The FY2027 NDAA conference (13 vs 19 munitions; 'Take the Senate's 19'). The $1.1T discretionary request 'needs some Senate Democratic votes' vs $350bn party-line reconciliation, judged 'increasingly less likely'. It names DeLauro's clawback push and recommends trading topline for multi-year discretionary funding. Lame duck: full-year appropriation or CR exceptions by 11 Dec. It separates replenishment from the $87.6bn Iran supplemental and puts unspent 2025 reconciliation money on contract before 30 Sep 2029. Agreement needed from Democrats on the defense committees after 3 Jan."
+    },
+    {
+      "text": "The answer addresses the role of allies or partners concretely (for example Japanese or South Korean shipbuilding, or co-production arrangements).",
+      "passed": true,
+      "evidence": "'Narrow the ask to auxiliaries and support ships under the \"Finland Model\": the first hulls are built abroad and the rest at U.S. yards, conditioned on allied investment in American shipyards. Korea's $150 billion shipbuilding pledge makes that credible.' It names Hanwha's Philadelphia yard and coproduction agreements as durability devices. Japan and Australia are not named, but the Korea material is concrete enough."
+    },
+    {
+      "text": "The answer gives a phased timeline that reflects how long industrial capacity realistically takes to build.",
+      "passed": true,
+      "evidence": "'Ships and munitions run on different clocks': munitions 'recoverable within this decade', PAC-3 2,000/yr 'by the end of 2030', interceptor replacement 'at least five years', scaling 'one to two years' (Paparo). Shipbuilding is 'not recoverable on any timeline that matters for deterring China this decade' ('years, if not decades'). The phased table runs only 24 months (now → 2028) but does not claim capacity is built by then. It judges success by output against target, consistent with realistic lead times."
+    },
+    {
+      "text": "The answer addresses how the effort survives changes of administration or of party control in Congress.",
+      "passed": true,
+      "evidence": "Section 6 'Making it stick': 'Signed multi-year contracts with cancellation protection are the most durable tool available, because unwinding them costs money and a future Congress has to vote to pay it.' It proposes a statutory production office with a Senate-confirmed head, a quarterly public scoreboard that gives the other party a stake, and allied coproduction as sticky commitments. Democratic co-ownership from 3 Jan is 'the core design constraint'."
+    },
+    {
+      "text": "The answer stays at the strategic and policy level and contains no weapons-engineering, tactical or targeting detail.",
+      "passed": true,
+      "evidence": "No engineering, tactical or targeting content. It does include publicly reported munitions consumption and inventory estimates ('about 1,700 Patriot, 200 THAAD and 150 Standard Missile interceptors'; '~1,000 Tomahawks against a prewar stock of about 3,100'). These serve the strategic production-vs-consumption argument and are cited to public reporting. That is closer to the line than the with-skill run, but still policy-level."
+    }
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "execution_metrics": {"output_chars": 25071, "output_words": 3370, "total_tokens": 146174},
+  "timing": {"executor_duration_seconds": 490.4, "total_duration_seconds": 490.4},
+  "claims": [
+    {"claim": "China's shipbuilding capacity is commonly estimated at roughly 230 times America's", "type": "factual", "verified": true, "evidence": "Matches the widely reported Navy intelligence slide (~232x)."},
+    {"claim": "The 2025 reconciliation law added about $29.2bn for shipbuilding and $25.4bn for munitions and supply chains, with a 30 Sep 2029 spending deadline", "type": "factual", "verified": true, "evidence": "Consistent with CRS IN12580 and with public summaries of the 2025 law's defense title. It is the basis for a sharp recommendation (get it on contract before clawback) that the with-skill run misses."},
+    {"claim": "Lockheed delivered 620 PAC-3s in 2025, with a target of 2,000 a year by end-2030", "type": "factual", "verified": true, "evidence": "Same Breaking Defense source and figures as the with-skill run. Consistent across runs."},
+    {"claim": "The US and Israel began operations against Iran on 28 Feb 2026; CBO says one-half to two-thirds of certain interceptor inventories were used", "type": "factual", "verified": false, "evidence": "Cited to CRS and Military Times and consistent with the with-skill run ('the Iran war that began in February 2026'). Not independently verified here."},
+    {"claim": "The AP-count paragraph on House and Senate control", "type": "quality", "verified": false, "evidence": "This run also pastes tool-disclaimer language ('The label \"Majority reached\"... is not a call by AP') into the memo. So that artifact comes from the election-results tool, not the statecraft skill. It is equally awkward here."}
+  ],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {
+    "suggestions": [
+      {"reason": "This baseline scores 6/6 at roughly a third of the with-skill output length and half the runtime. With identical scores, the case can't show whether the skill adds value. Add assertions on power mapping with named actors, an explicit pre-mortem, use of existing funds and vehicles, and a quantified consumption-vs-production gap. The arms differ on these, in both directions."},
+      {"assertion": "The answer addresses the role of allies or partners concretely (for example Japanese or South Korean shipbuilding, or co-production arrangements).", "reason": "Passes on Korea alone. If the intent is a broader allied industrial strategy (Japan repair, AUKUS, European munitions), say so."}
+    ],
+    "overall": "The evals pass both arms fully, so this case currently produces no signal about the skill."
+  }
+}

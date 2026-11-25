@@ -1,0 +1,55 @@
+{
+  "expectations": [
+    {
+      "text": "The answer identifies specific binding constraints on the defense industrial base (such as skilled workforce, shipyard capacity, supplier fragility, or unstable demand signals) rather than treating it mainly as a funding problem.",
+      "passed": true,
+      "evidence": "'treat this as a credibility problem, not a money problem... Stopgap budgets legally freeze production increases. Flagship programmes get cancelled or reinvented'. Also: 'less a money problem than a buyer problem' (CSIS: production time, not funding), the 155mm shortfall, the Navy's 250,000-hire workforce need, solid-rocket-motor supply consolidated to two firms, design churn, and the root-cause tree (erratic demand, thin supply base, workforce, buyer behaviour, foreign chokepoints)."
+    },
+    {
+      "text": "The answer explains the concrete political and budget path through Congress (for example appropriations, the NDAA, multiyear procurement authority, or reconciliation) and who has to agree.",
+      "passed": true,
+      "evidence": "Lame duck: CR 'anomalies' by 11 December; NDAA conference (take the Senate's 19-munition multiyear list over the House's 13, the SHIPS package, a five-year DPA reauthorisation); 'Don't chase $350bn' reconciliation (42–85 days needed vs ~20 session days). New Congress: move industrial-base money into base appropriations with multi-year availability. Who must agree is named: appropriators DeLauro and Murray (HAC-D/SAC-D), Armed Services leaders Smith, Reed, Rogers and Wicker, the Freedom Caucus, the 60-vote Senate."
+    },
+    {
+      "text": "The answer addresses the role of allies or partners concretely (for example Japanese or South Korean shipbuilding, or co-production arrangements).",
+      "passed": true,
+      "evidence": "'Bring allied capital into US yards. Hanwha's Philadelphia yard won its first Navy order on 1 November under Korea's $150bn shipbuilding pledge... Use allied yards for auxiliaries and repair rather than combatants.' Also 'multi-year co-production deals with Japan and Australia', and allocation rules so allied deliveries don't compete with US restocking (dossier design feature 7)."
+    },
+    {
+      "text": "The answer gives a phased timeline that reflects how long industrial capacity realistically takes to build.",
+      "passed": true,
+      "evidence": "A 'four problems on four clocks' table: high-end munitions 3–5 years; shipbuilding 15–20 years ('No. It can only set the trajectory and lock it in'); ship repair 2–6 years; chokepoints 1–5 years. The campaign runs in phases: lame duck (to 3 Jan), new Congress (Jan–Mar 2027), delivery and lock-in (2027–28). Success is defined by end of FY2030 with minimum buys funded through FY2033."
+    },
+    {
+      "text": "The answer addresses how the effort survives changes of administration or of party control in Congress.",
+      "passed": true,
+      "evidence": "Lasts is named as the binding gate. 'Termination liability is the durability mechanism. A future administration can still cancel, but it has to pay to do so.' Also: codify the EO's performance conditions in the NDAA, a co-authored bill Democrats can name, geographic spread, allied co-production stakeholders, and a shared bipartisan dashboard. Dossier s.11 'Surviving a change of government'."
+    },
+    {
+      "text": "The answer stays at the strategic and policy level and contains no weapons-engineering, tactical or targeting detail.",
+      "passed": true,
+      "evidence": "Content is limited to budgets, contracts, production rates (e.g. PAC-3 620→2,000/yr), workforce, supply-chain categories (solid rocket motors, energetics, seekers as sub-tier industries) and alliance policy. There is no engineering, tactical or targeting content. The one operational judgment ('A Pacific war in the next five years would be fought largely with the fleet that already exists') is strategic-level."
+    }
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "execution_metrics": {"output_chars": 70090, "output_words": 9376, "total_tokens": 213900},
+  "timing": {"executor_duration_seconds": 1043.0, "total_duration_seconds": 1043.0},
+  "claims": [
+    {"claim": "Odds lines: current 0.5x0.3x0.4x0.3 ≈ 2%; recommended 0.7x0.6x0.55x0.6 ≈ 14%", "type": "factual", "verified": true, "evidence": "Recomputed: 0.018 and 0.139. The option-table products are also correct."},
+    {"claim": "The 1993 'Last Supper' consolidation shrank roughly 51 prime contractors to 5; Liberty ships totalled 2,710 hulls", "type": "factual", "verified": true, "evidence": "Both match commonly cited DoD and historical figures."},
+    {"claim": "The Liberty ship miracle 'rested on the 1936 Merchant Marine Act's decade of steady orders' and on 'British and French orders'", "type": "factual", "verified": false, "evidence": "Overstated. Only about five years passed between the 1936 Act and Pearl Harbor. The Maritime Commission's ten-year, 50-ships-a-year programme was planned, not completed, by 1941. British orders (the Ocean class) did seed the Liberty design, but French pre-war orders were mainly aircraft, not ships. The lesson's core point survives; the framing is inaccurate and is repeated in both reply and dossier."},
+    {"claim": "'If the $60bn package moves anyway, use it for one-time capital'", "type": "factual", "verified": false, "evidence": "The $60bn figure appears twice in the dossier with no explanation or source. Everywhere else the reconciliation ask is $350bn. It is unsupported and confusing to a principal."},
+    {"claim": "Budget-path completeness", "type": "quality", "verified": false, "evidence": "The answer never mentions the defense money already appropriated by the 2025 reconciliation law (~$29bn shipbuilding, ~$25bn munitions, per CRS IN12580 cited by the without-skill run) or the idea of putting it on contract before Democrats try to claw it back. That is a significant omission for a 'budget-wise' question."},
+    {"claim": "China's mineral export-control suspension expires 10 January 2027 after a two-month extension on 9 November", "type": "factual", "verified": true, "evidence": "Cited to The National, 9 Nov 2026 (URL title 'China extends pause on rare earth export curbs for two months'). Plausible and more current than the without-skill run's 'one-year suspension... now coming due'."}
+  ],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {
+    "suggestions": [
+      {"reason": "Both arms score 6/6, so these assertions don't discriminate on this case. Candidates that would: the answer exploits money and authorities already in motion (e.g. unobligated 2025 reconciliation funds, the PAC-3 framework template); it quantifies the consumption-vs-production gap; it handles the lame-duck CR and NDAA deadlines specifically; it introduces no unexplained figures."},
+      {"assertion": "The answer gives a phased timeline that reflects how long industrial capacity realistically takes to build.", "reason": "Satisfied by a 24-month table plus prose (without-skill) as easily as by an explicit per-asset clock table (with-skill). Require separate realistic horizons for munitions and for ships if that distinction matters."},
+      {"assertion": "The answer stays at the strategic and policy level and contains no weapons-engineering, tactical or targeting detail.", "reason": "A useful safety guard, but any competent answer passes it. Keep it as a gate, not a quality signal."},
+      {"reason": "No assertion checks proportionality: this run is ~9.4k words with heavy reply/dossier duplication (four-clocks table, odds lines and Liberty-ship lesson appear in both)."}
+    ],
+    "overall": "The evals confirm structure but can't separate a good answer from a better one. On this case the baseline is arguably the more useful document per minute of reading, and the assertions are blind to that."
+  }
+}

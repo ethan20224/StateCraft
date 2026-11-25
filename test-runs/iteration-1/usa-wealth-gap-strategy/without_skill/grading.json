@@ -1,0 +1,53 @@
+{
+  "expectations": [
+    {
+      "text": "The answer names a specific decision-maker (such as the President) and works from that person's real powers and constraints, rather than treating \"America\" as a single actor.",
+      "passed": true,
+      "evidence": "The President is the decision-maker throughout ('the strategy I'd put on the President's desk'). It separates 'First 100 days (presidential action, no Congress needed)' (Treasury rules, IRS staffing, HUD/DOT grant discretion) from reconciliation and 60-vote legislation. A borderline pass: it plans for a hypothetical president ('a president of either party', 'a Congress with thin margins') and never engages with the actual sitting President, the midterm result or the 26 months left. Its 'first 100 days' framing assumes a new term."
+    },
+    {
+      "text": "The answer separates the wealth gap into distinct sub-problems (for example top-end concentration, bottom-half asset poverty, the racial gap, mobility) and states which one or ones the strategy targets and why.",
+      "passed": true,
+      "evidence": "'\"the wealth gap\" is really two problems with one name... half the country owns almost nothing that grows... wealth at the very top grows faster... Taxing the top doesn't give anyone at the bottom an asset... You need both moves, and you need them connected.' The racial gap is treated separately (16 cents on the dollar) with race-neutral design reasoning. The scorecard targets bottom-half ownership and treats the top share as 'Background'."
+    },
+    {
+      "text": "The answer identifies which legislative or executive route each major measure would use (for example budget reconciliation, 60-vote legislation, executive action, or the states) and lets that shape the design.",
+      "passed": true,
+      "evidence": "Explicit routing. Executive: Saver's Match rules and the claim gap in the first 100 days. Reconciliation: 'the package is deliberately limited to taxes and deposits' because of the Byrd rule. 60-vote: auto-IRA, highway-bill housing conditions, asset-limit exemptions. States: 'Zoning is controlled by states and cities, so Washington's job is to pay for results.' Caveat: it recommends year-one reconciliation without checking who controls Congress; in the real configuration this route is doubtful."
+    },
+    {
+      "text": "The answer names specific opponents or veto players and gives a concrete plan for winning them over, neutralising them, or compensating them.",
+      "passed": true,
+      "evidence": "Borderline pass. 'Opponents: the estate-planning and wealth-management industry (over the step-up), local homeowner groups (over zoning), and parts of the financial industry.' Concrete compensation offers: the Canada-style trade ('keep the $15 million estate exemption... in exchange for ending the step-up. Conservatives get \"no new death tax\"'), deferral for family farms and businesses, and homeowner reassurance ('your home keeps its value'). No plan for the financial-industry opponent, and no named congressional veto players or swing actors."
+    },
+    {
+      "text": "The answer gives a sequenced plan in phases or time periods, including concrete first moves.",
+      "passed": true,
+      "evidence": "Section 5 sequences 'First 100 days', 'Year one (the budget package)', 'Years one to three (ordinary legislation)' and 'Years three to eight and beyond'. Concrete first moves include Treasury Saver's Match rules with a default destination, multi-channel Trump Account claims, IRS redeployment to partnerships, HUD/DOT grant scoring, and launching the Ownership Report with a named evaluator."
+    },
+    {
+      "text": "The answer includes indicators or tripwires for detecting failure early, and a pre-mortem or a strongest-case-against section.",
+      "passed": false,
+      "evidence": "The indicators half is met: scorecard targets, quarterly Treasury account data, 'automatic corrections' and 'Any part that misses its early indicators for three years in a row gets a required review'. But there is no pre-mortem and no strongest case against the overall strategy. Counter-arguments appear only on sub-choices (Saez/Zucman on the wealth tax; reparations advocates on race-neutral design). 'What most people get wrong' is a list of common errors, not a case against this plan. Both halves are required, so this fails."
+    }
+  ],
+  "summary": {"passed": 5, "failed": 1, "total": 6, "pass_rate": 0.83},
+  "execution_metrics": {"output_chars": 32497, "output_words": 4864, "total_tokens": 140241},
+  "timing": {"executor_duration_seconds": 597.6, "total_duration_seconds": 597.6},
+  "claims": [
+    {"claim": "The top 1% hold about fourteen times what the entire bottom half holds; roughly 1.3 million households own about $64 trillion", "type": "factual", "verified": true, "evidence": "32.5% / 2.3% = 14.1; 32.5% x $195.9T = $63.7T; 1% of ~132M households is about 1.3M. Internally consistent with the cited Fed DFA/Z.1 figures."},
+    {"claim": "Canada abolished its estate tax in 1972 and instead taxes capital gains at death", "type": "factual", "verified": true, "evidence": "Correct: Canada's deemed-disposition-at-death rule replaced federal estate duty from 1972."},
+    {"claim": "Twelve OECD countries had net wealth taxes in 1990 and only four in 2017", "type": "factual", "verified": true, "evidence": "Matches the OECD's 2018 'Role and Design of Net Wealth Taxes' report."},
+    {"claim": "About 8 million of 60+ million auto-enrolled children had claimed Trump Accounts by October; the $1,000 seed arrives only on claim", "type": "factual", "verified": true, "evidence": "Plausible and consistent with search results (IRS/Treasury signup counts; Bloomberg on low claim rates among auto-enrolled accounts). Denominators differ across sources, so this is not exactly reconcilable with the with-skill run's '39% of eligible' (that figure refers to seed-eligible newborns)."},
+    {"claim": "Year one: pass step-up reform, the borrowing rule and the children's deposits through budget reconciliation (party-line as fallback)", "type": "quality", "verified": false, "evidence": "Not grounded in the actual configuration. Going by AP's count (pulled in other runs), the President faces Democratic majorities from January. A party-line reconciliation bill would need a Republican President to sign Democratic tax increases. The answer never checks who holds power."}
+  ],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {
+    "suggestions": [
+      {"assertion": "The answer names a specific decision-maker (such as the President) and works from that person's real powers and constraints, rather than treating \"America\" as a single actor.", "reason": "This run passes with a generic, hypothetical president. Tighten it to require the actual current officeholder, the current partisan control and remaining time in office."},
+      {"assertion": "The answer names specific opponents or veto players and gives a concrete plan for winning them over, neutralising them, or compensating them.", "reason": "Passed narrowly on industry categories plus one clever trade. Requiring named institutional veto players (committees, caucuses, specific senators or the filibuster) would discriminate better."},
+      {"reason": "This answer has strong original moves the assertions don't reward: the Canada-style estate-for-step-up trade, tying highway reauthorisation money to housing permits, and a dedicated trust fund linking the top-end revenue to children's deposits. An originality or non-obvious-lever assertion would capture where the baseline sometimes beats the skill."}
+    ],
+    "overall": "Assertions are mostly presence checks. The only failure here is the missing pre-mortem/case-against, which is the template element the skill forces. Political feasibility in the real configuration is the bigger weakness and goes unpenalised."
+  }
+}

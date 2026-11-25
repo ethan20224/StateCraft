@@ -1,0 +1,12 @@
+{
+  "eval_name": "usa-wealth-gap-strategy",
+  "prompt": "america needs to fix its wealth gap, like actually fix it, not just talk about it. imagine you're the one advising the president — what's the strategy and the actual steps to make it happen in the real world, and how do we make sure it actually works",
+  "assertions": [
+    "The answer names a specific decision-maker (such as the President) and works from that person's real powers and constraints, rather than treating \"America\" as a single actor.",
+    "The answer separates the wealth gap into distinct sub-problems (for example top-end concentration, bottom-half asset poverty, the racial gap, mobility) and states which one or ones the strategy targets and why.",
+    "The answer identifies which legislative or executive route each major measure would use (for example budget reconciliation, 60-vote legislation, executive action, or the states) and lets that shape the design.",
+    "The answer names specific opponents or veto players and gives a concrete plan for winning them over, neutralising them, or compensating them.",
+    "The answer gives a sequenced plan in phases or time periods, including concrete first moves.",
+    "The answer includes indicators or tripwires for detecting failure early, and a pre-mortem or a strongest-case-against section."
+  ]
+}

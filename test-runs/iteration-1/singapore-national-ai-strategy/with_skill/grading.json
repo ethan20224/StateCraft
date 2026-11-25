@@ -1,0 +1,55 @@
+{
+  "expectations": [
+    {
+      "text": "The answer commits to a specific strategic position or niche for Singapore in AI rather than recommending competing on every layer.",
+      "passed": true,
+      "evidence": "'stop trying to win the AI race as a runner. Make Singapore the place the race can't route around and can't distrust, and the country that turns AI into higher wages fastest.' The strategy is named 'Trusted Node, Fastest Adopter'. Dossier s.1.2 scores four versions and rejects 'Contestant' ('Physically and financially out of reach'). Explicit 'Don't build a leading-edge chip fab' and 'Do not build a national frontier model'."
+    },
+    {
+      "text": "The answer addresses the US–China dimension concretely (for example chip export controls, hedging, or trusted-hub positioning) and explains how Singapore navigates it.",
+      "passed": true,
+      "evidence": "Built around the 16 Nov 2026 BIS rule (licence list, case-by-case review weighing 'how effective Singapore's own export-control regime is', US-HQ exemption, 17 Feb and 18 Jan deadlines) and the Megaspeed probe. The organising rule is 'line up with the US on the few choke-point technologies, and stay open on everything else'. Also: the UAE-style approved-entity ask, a private Beijing briefing before the announcement, and a 'Beijing channel' message ('rules are non-discriminatory')."
+    },
+    {
+      "text": "The answer addresses Singapore's physical constraints for AI infrastructure, such as energy, land, water, or data-centre capacity, and proposes how to work within or around them.",
+      "passed": true,
+      "evidence": "'Energy is the hard ceiling': up to 95% gas, data centres over 7% of the grid, none of 9.25GW of imports at financial close, vacancy under 2%. Responses: reserve local megawatts for high-value inference, regulated and sovereign workloads; full marginal-cost pricing; a grid-share cap (~12% by 2030); a Johor compute ring under a shared verification standard; government offtake for import corridors; an IAEA review in 2027 and a nuclear go/no-go by 2029. Water is not addressed, which is acceptable."
+    },
+    {
+      "text": "The answer assigns key actions to specific Singapore institutions or agencies (for example a named ministry, statutory board or fund) rather than to \"the government\" in general.",
+      "passed": true,
+      "evidence": "Dossier s.8 delivery table assigns each pillar to an accountable minister and lead agencies: IMDA, Customs, CSA, CAD and MAS for trusted compute; EDB, A*STAR, JTC, ITE for hardware; EMA, IMDA, JTC for power; PMO Delivery Unit, IMDA, EnterpriseSG and GovTech for diffusion; MOM, SSG, NTUC and SNEF for talent. The First 100 Days table has an Owner column (PM, MDDI, MFA, Customs, METI, MOF, EMA...)."
+    },
+    {
+      "text": "The answer sets measurable success indicators with a time frame.",
+      "passed": true,
+      "evidence": "Dossier s.1.5 targets table, for example 'Median BIS licence decision time... Under 60 days, more than 90% approved | End-2027'; 'SMEs using AI in a core business process... 50% or more | 2030'; 'Labour productivity growth in Mission sectors... At least 3% a year | 2027–30'; 'AI-displaced PMETs re-employed within 6 months 70% or more | From 2028'. The s.12 dashboard adds baselines and targets."
+    },
+    {
+      "text": "The answer discusses how the strategy could fail and what early signals would show it is failing.",
+      "passed": true,
+      "evidence": "Dossier s.10 has four failure stories (licensed into irrelevance, squeezed from both sides, a hub without a dividend, the power wall). The s.12 dashboard pairs leading indicators with tripwires, for example 'Over 120 days or under 70% approval by June 2027 → leader-level escalation'; 'Three or more major exits in six months → senior engagement with Beijing'; 'Under 30% by end-2027 → redesign the SME programme'."
+    }
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0},
+  "execution_metrics": {"output_chars": 84236, "output_words": 11244, "total_tokens": 249872},
+  "timing": {"executor_duration_seconds": 1222.5, "total_duration_seconds": 1222.5},
+  "claims": [
+    {"claim": "On 16 Nov 2026 BIS put Singapore (with Malaysia, Thailand, Indonesia, Brazil) under a licence requirement for advanced AI chips, effective 19 November", "type": "factual", "verified": true, "evidence": "Web search: Hogan Lovells, Greenberg Traurig, Nation Thailand and others confirm the interim final rule and the licence requirement from 19 November."},
+    {"claim": "In June 2026 a US directive forced Anthropic to cut foreign nationals off its newest models", "type": "factual", "verified": true, "evidence": "Web search: Al Jazeera (13–14 June 2026) and Bloomberg Government report the order and Anthropic disabling access."},
+    {"claim": "Singapore takes the ASEAN chair in 2027", "type": "factual", "verified": true, "evidence": "Consistent with the rotation (Malaysia 2025, Philippines 2026, Singapore 2027)."},
+    {"claim": "Odds: current path 0.65x0.6x0.55x0.7 ≈ 15%; with design 0.7x0.8x0.7x0.75 ≈ 30%", "type": "factual", "verified": true, "evidence": "Recomputed: 0.150 and 0.294. The option-table rows also compute correctly."},
+    {"claim": "Capping data centres at roughly 12% of the grid by 2030 is a meaningful constraint", "type": "quality", "verified": false, "evidence": "The without-skill run cites TechNode (Jul 2026) saying data centres are already projected to reach about 12% by the end of the decade. If so, the proposed 'cap' just restates the baseline trajectory and does not bind. The dossier presents it as a key decision for the PM without checking it against the baseline."},
+    {"claim": "Situation summary of the Megaspeed shock", "type": "quality", "verified": false, "evidence": "Omits that Nvidia CEO Jensen Huang resigned in November 2026 amid the scandal (web search finds the Nvidia 8-K and multiple reports). That is a material signal of how seriously Washington and markets are treating diversion via Singapore. The without-skill run caught it."}
+  ],
+  "user_notes_summary": {"uncertainties": [], "needs_review": [], "workarounds": []},
+  "eval_feedback": {
+    "suggestions": [
+      {"reason": "The prompt explicitly lists 'chips, energy, talent, the us-china situation', but no assertion checks talent, and none checks the chips strategy except indirectly. This run's talent section is thin (500–1,000 hires, wage insurance) and would not be caught."},
+      {"assertion": "The answer sets measurable success indicators with a time frame.", "reason": "Too easy: the without-skill run passes with a table that mixes real targets and 'Tracked and growing'. Require baselines and at least several numeric targets, and check that each target actually binds against the projected baseline (the 12% power 'cap' here may not)."},
+      {"assertion": "The answer assigns key actions to specific Singapore institutions or agencies (for example a named ministry, statutory board or fund) rather than to \"the government\" in general.", "reason": "Passes with a handful of agency mentions. 'Each major action has a named owner' would discriminate between this run's delivery table and the baseline's scattered mentions."},
+      {"reason": "No assertion checks currency or accuracy. Both runs found the 16 Nov BIS rule, but only the baseline reported the Nvidia CEO resignation. An assertion on correctly characterising the current shock would test the skill's 'ground it in current reality' claim."}
+    ],
+    "overall": "All six pass, but they reward the skill's template (owner tables, dashboards, pre-mortems). They don't test strategic originality, where the baseline was arguably stronger (the symmetric anti-circumvention principle, SEA-LION base-model dependency, AI assurance/insurance hub)."
+  }
+}

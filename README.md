@@ -33,7 +33,7 @@ statecraft/
                             editor's notes, review.html (side-by-side viewer)
 ```
 
-Tags `v1.0` and `v2.0` mark each version. To see exactly what changed between them, run `git diff v1.0 v2.0 -- statecraft/SKILL.md`.
+Commit `d9e2c50` is v1 and commit `ed8a631` is v2. To see exactly what changed between them, run `git diff d9e2c50 ed8a631 -- statecraft/SKILL.md` or open that compare view on GitHub.
 
 ---
 

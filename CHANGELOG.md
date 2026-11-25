@@ -1,12 +1,27 @@
 # Changelog
 
+## v2.1 — 2026-11-25
+
+v2.0 made the first answer a 1,500–3,000-word reply and held the dossier back until you said "write it up". That was the one area where v1 still did better: v1 gave you the whole package on the first message. v2.1 gives the full package in one go and keeps v2's fixes.
+
+### Changed
+
+- **The whole package comes in one go.** A big strategy question now gets the full dossier plus a short chat reply on the first message. You never need to say "write it up".
+- **The fork is decided, not asked about.** Before writing, the skill finds the one choice that would most change the plan (the seat, the version of the problem, the time horizon, a values trade-off). It makes the call itself, states it at the top of the dossier, and builds the plan on it. It only asks first when the request is too vague for any plan to be right, and then asks at most two questions.
+- **The other branch is sketched, not lost.** The Cabinet Brief now states the assumptions and fork the plan rests on, with a few sentences on how the plan changes on the other branch. This is where v2.1 beats v1: v1 also gave the full package at once, but it built on unconfirmed forks silently.
+- **The chat reply suggests the alternatives.** It is now 250–400 words: the bottom line, the fork chosen and why, two or three alternatives with one line each on what they'd change, the decisions, the biggest risk, and an offer to rebuild on another branch. It still never restates the dossier.
+- **Advisor stance updated.** At real forks the skill makes the call visibly and leaves it to you to overturn, instead of pausing to ask which way you lean.
+- **New final-check item:** did they get the whole package in one go, with the fork stated and the other branch sketched?
+
+Kept from v2.0: the lean six-section dossier, a 3,000–6,000-word length, plain language, coarse odds, and the three substance checks. Not yet done: a retest of v2.1 on the three test prompts.
+
 ## v2.0 — 2026-11-25
 
 Version 2 is a revision driven by the iteration-1 side-by-side test (see `test-runs/iteration-1/`). The test showed v1's method was right: it beat plain Claude on grounding plans in who actually holds power, and it named bottlenecks, odds and tripwires. But v1 packaged its thinking badly. Version 2 keeps the method and fixes the packaging. It also adds three substance checks, each aimed at a specific miss.
 
 ### Changed
 
-- **The first answer is one integrated reply, not a dossier.** For a big strategy question, the skill now gives one integrated answer of 1,500–3,000 words, with the recommendation and first moves in the opening paragraphs. It ends with the fork question and an offer to build the dossier. In v1, every test run produced a 7,000–11,000-word dossier on the first turn, against the "when a strategy forms" design choice.
+- **The first answer is one integrated reply, not a dossier** *(reversed in v2.1)*. For a big strategy question, the skill now gives one integrated answer of 1,500–3,000 words, with the recommendation and first moves in the opening paragraphs. It ends with the fork question and an offer to build the dossier. In v1, every test run produced a 7,000–11,000-word dossier on the first turn, against the "when a strategy forms" design choice.
 - **The dossier is a lean core, not a 16-section template.** It now has six core sections: Cabinet Brief; Problem and Target; Seat, Constraints and Route; Strategy and Sequence; Risks and Tripwires; First 100 Days. Other material comes as optional modules, used only when they change a decision. The target length is 3,000–6,000 words. Filler sections get cut.
 - **The chat reply beside a dossier is about 250 words.** It no longer restates the dossier.
 - **Thinking tools stay backstage.** Dossiers are written in plain language for a leader's staff. They don't name frameworks or scholars, use cabinet personas, or say "the Passes gate". The cabinet never appears in the output as a dialogue.

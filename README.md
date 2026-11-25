@@ -136,18 +136,18 @@ The skill reads what you're asking for and moves between six working modes on it
 | --- | --- | --- | --- |
 | Counsel | Direct answer, reasoning, the bottleneck gate, a challenge if needed, one sharp question back | You want advice or to think out loud | "Is a wealth tax even the right tool?" |
 | Country Brief | Assesses a country's position, ranks 3–5 priorities, sets the order and what *not* to do | You want the big picture for a country | "What does Japan actually need to do?" |
-| Strategy Dossier | The full build, written up as a document you keep and refine | A real plan has formed | "Okay, write up the full strategy." |
+| Strategy Dossier | The full build, written up as a document you keep and refine | Any big strategy question, on the first message | "What should America do about housing? Strategy and steps." |
 | War Room | A turn-by-turn simulation: you're the leader, it plays everyone else | You want to test a plan against reality | "War Room: I'm the President, goal is X." |
 | Red Team | Attacks your plan gate by gate, then ranks fixes | You already have a plan | "Red-team this plan: …" |
 | Crisis Desk | Decisions in time slices: first 24 hours, first week, first month | Something just broke | "Crisis: a major bank just failed." |
 
-**The first answer to a big question.** Ask "what should America do about X" and you get one integrated answer of roughly 1,500–3,000 words, not a dossier. The recommendation and first moves come in the opening paragraphs. Then come the seat, the strategy with owners and sequence, the non-obvious moves, the risks with tripwires, and your decisions. It ends with the fork question that would most change the plan, and an offer to build the dossier once you've picked a direction.
+**The first answer to a big question.** Ask "what should America do about X" and you get the whole package in one go: the full dossier plus a short chat reply. You never have to say "write it up". The skill finds the fork that would most change the plan (the seat, the version of the problem, the time horizon), makes the call itself, states it at the top of the dossier and sketches how the plan changes on the other branch. The chat reply suggests the alternatives worth considering and offers to rebuild on any of them. It only asks before building when the request is too vague for any plan to be right.
 
 **War Room in detail.** It sets the starting position from real, current data. Each turn shows a status panel: political capital, approval, vote count, budget room, the key indicator, international temperature, open threats. Every other actor plays to win by its own incentives, and realistic shocks happen (a court ruling, a scandal, a market move). You get two to four options plus a free choice each turn, a debrief every few turns, and an after-action review at the end.
 
 ## The strategy dossier
 
-The dossier is the written deliverable: what a government delivery unit would hand a head of government. It appears once you've engaged with a direction, or whenever you ask for the write-up ("write it up", "make the doc"). It never comes as the first reply to a broad question. Once it exists, the skill keeps updating the same dossier as your thinking evolves.
+The dossier is the written deliverable: what a government delivery unit would hand a head of government. It arrives on the first answer to any big strategy question, whenever you ask for the write-up, or when a strategy forms in conversation. Once it exists, the skill keeps updating the same dossier as your thinking evolves.
 
 It's written for the leader's staff: plain language, no framework names or skill jargon, roughly 3,000–6,000 words, and every section must change a decision or it's cut. The chat reply that accompanies it stays to about 250 words (bottom line, your decisions, the biggest risk) and never repeats the document.
 
@@ -259,12 +259,12 @@ Analysing how authoritarian systems work, or how adversaries think, is fair game
 | --- | --- | --- |
 | Counsel | "Is a wealth tax even the right tool for America, or is housing the real lever?" | A direct answer, the bottleneck gate, a challenge, one question back |
 | Country Brief | "What does the UK actually need to do over the next decade, and in what order?" | Position, 3–5 ranked priorities, the sequence, what not to touch |
-| Strategy Dossier | "Let's go with the housing route. Write up the full strategy." | A full dossier as an editable doc |
+| Strategy Dossier | "What should America do about housing? Give me the strategy and the steps." | A full dossier as an editable doc, plus a short reply naming the fork it chose and the alternatives |
 | War Room | "War Room. I'm the President, January 2027. Goal: pass permitting reform." | A live simulation with a status panel and real opponents |
 | Red Team | "Here's my plan to fix US healthcare costs: … tear it apart." | Gate-by-gate attack, pre-mortems, ranked fixes |
 | Crisis Desk | "Crisis: China blockades Taiwan tomorrow. I'm the National Security Adviser." | A decision plan for the first 24 hours, first week and first month |
 
-**A good rhythm for a big question.** Open in Counsel to reframe the problem and pick the seat. Push back on its reframe if you disagree. Once a direction feels right, ask for the dossier. Then War Room it, or Red Team your own dossier, and let it update the doc.
+**A good rhythm for a big question.** Ask for the strategy and get the dossier straight away. Read the fork it built on; if you'd choose differently, say so and it rebuilds on your branch. Then War Room it, or Red Team your own dossier, and let it update the doc.
 
 ## Getting the most out of it
 
@@ -285,6 +285,6 @@ The skill gets better the harder you push it. These habits pull the most out of 
 
 Version 1 was tested side by side against plain Claude on three prompts: America's wealth gap, Singapore's AI strategy and the US defense industrial base. It passed every objective check (100% vs 89%) and was clearly better at grounding plans in who actually holds power. It also wrote too much too early and leaned on its own template.
 
-Version 2 fixes that. It gives a sharp first answer instead of an instant dossier, uses a lean six-section dossier, writes in plain language for leaders and keeps its odds coarse. It also adds three new checks: use what's already in motion, make targets bind, and find the non-obvious moves. Version 2 has not yet been re-run against the test prompts; see [CHANGELOG.md](CHANGELOG.md) and [`test-runs/iteration-1/qualitative-notes.md`](test-runs/iteration-1/qualitative-notes.md).
+Version 2 fixes that. It uses a lean six-section dossier, writes in plain language for leaders and keeps its odds coarse. It also adds three new checks: use what's already in motion, make targets bind, and find the non-obvious moves. Version 2 has not yet been re-run against the test prompts; see [CHANGELOG.md](CHANGELOG.md) and [`test-runs/iteration-1/qualitative-notes.md`](test-runs/iteration-1/qualitative-notes.md).
 
 **What's next.** The strongest follow-up project is a visual **War Room dashboard**: a live panel of approval, political capital, votes, budget and international tension that moves as you play. It's worth building once real War Room sessions show which numbers actually matter.

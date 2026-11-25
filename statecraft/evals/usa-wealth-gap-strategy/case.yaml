@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: usa-wealth-gap-strategy
+expected_outcome: |
+  An advisor-grade strategy for reducing US wealth inequality from the President's chair,
+  grounded in current data and the real US political system. It reframes the problem into
+  distinct sub-problems, picks targets, maps power and veto players, chooses legislative and
+  executive routes deliberately, sequences the campaign, designs delivery and durability,
+  and includes early-warning indicators and a pre-mortem. It stays politically even-handed
+  and presents the strongest case against.
